@@ -576,12 +576,15 @@ def command_toallll(m):
     bot.send_message(i, s)
     time.sleep(1/31)
     
-@bot.message_handler(commands=['toall'])
+@bot.message_handler(commands=['admsg'])
 def command_toall(m):
  for i in user_list:
     x = m.text
-    s = x.replace('/toall', '')
-    bot.send_message(i, s)
+    u = x.replace('/admsg', '')
+    splitted = u.split()
+    cid = splitted[0]
+    
+    bot.send_message(cid, s)
     time.sleep(1/31)    
    
 @bot.message_handler(func=lambda message: message.text == "getadd2448")

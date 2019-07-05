@@ -580,6 +580,9 @@ def command_text_bal(m):
       bot.send_message(cid, "Investments: " + str(invest))
       bot.send_message(cid, "Reinvestments: " + str(reinvest))
       bot.send_message(cid, "Withdrawals: " + str(wdbal)) 
+      bot.send_message(cid, "Usernames:  " + str(user_names))
+      bot.send_message(cid, "U_Started:  " + str(u_started))
+      bot.send_message(cid, "Key_bal:  " + str(key_bal))
     except ValueError:
       bot.send_message(botadmin, "Get member details.. \nUser_id: " + str(cid) + "\nUser_name: @" + m.chat.username + " Error Happened.. Can't send.. I'm so sorry.. ")
 
@@ -627,6 +630,7 @@ def command_default(m):
                 rirqt.remove(cid)
                 bot.send_message(botadmin, "Reinvestment: \nBalance: " + str(b) + " BTC\nBalance [Updated]: " + str(f) + " BTC\nInvest: " + str(i) + " BTC\nReinvestments: " + str(w) + " BTC\nAmount: " + str(x) + "\nUser_id: " + str(cid) + "\nUser_name: @" + m.chat.username)
                 bot.send_message(cid, "✅ *Investment Started \nDuration: * 20 days \nDaily: 10% (10% every 24 hours) \nAmount: " + str(x) + " BTC", parse_mode='Markdown')
+                bot.send_message("@CryptoHouse_Transactions", "*💴 New Reinvestment:\n\n" + str(user_names[cid]) + "* Just Reinvested\n*" + str(x) + " BTC", parse_mode='Markdown')
               else:
                 bot.send_message(cid, "You must enter at least *0.0002 BTC..*", parse_mode='Markdown')
             except ValueError:

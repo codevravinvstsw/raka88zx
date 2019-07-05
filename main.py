@@ -614,8 +614,8 @@ def command_default(m):
             x = m.text
             try:
               float(x)
-              if (float(x)>=0.0002):
-                v = balance[cid]
+              v = balance[cid]
+              if (float(x)>=0.0002 and float(x)<=float(v)):
                 b = "{:.8f}".format(v)
                 k = (float(v)-float(x))
                 f = "{:.8f}".format(k)

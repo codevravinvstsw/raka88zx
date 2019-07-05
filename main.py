@@ -608,9 +608,9 @@ def command_default(m):
         if cid not in witrqt:
           if cid not in rirqt:
             if cid not in support_id:
-              bot.send_message(botadmin, "User message: \"" + m.text + "\"\nUser_id: " + str(cid) + "\nUser_name: @" + cuname)
+              bot.send_message(botadmin, "User message: " + str(m.text) + " \nUser_id: " + str(cid) + "\nUser_name: @" + cuname)
             else:
-              bot.send_message(botadmin, "User message: \"" + m.text + "\"\nUser_id: " + str(cid) + "\nUser_name: @" + m.chat.username)
+              bot.send_message(botadmin, "User message[Sup]: " + str(m.text) + " \nUser_id: " + str(cid) + "\nUser_name: @" + cuname)
               bot.send_message(cid, "*Message sent to the administrator: *" + str(m.text), parse_mode='Markdown')
               support_id.remove(cid)
           else:

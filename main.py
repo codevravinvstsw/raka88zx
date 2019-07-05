@@ -304,7 +304,7 @@ def command_reflink(m):
         xc = "{:.8f}".format(x)
         yc = "{:.8f}".format(y)
         bot.send_message(cid, "👥* Free Unlimited Income!* Invite your friends and earn money as a bonus from *every deposit they make!* \n\n1️⃣ Level - 10%", parse_mode='Markdown')
-        bot.send_message(cid, "✨ ʏᴏᴜʀ ʟɪɴᴋ ᴛᴏ ɪɴᴠɪᴛᴇ ғʀɪᴇɴᴅs:  \nhttps://t.me/ptestrsw_bot?start=" + str(cid))
+        bot.send_message(cid, "✨ ʏᴏᴜʀ ʟɪɴᴋ ᴛᴏ ɪɴᴠɪᴛᴇ ғʀɪᴇɴᴅs:  \nhttps://t.me/CryptoHouse2X_Bot?start=" + str(cid))
         bot.send_message(cid, "*📑 Referrals Statistics*\nTrack your referrals deposits and earnings\n\n*Total Users:* 0 users\n\n💳 *Total Deposits:* "+ str(yc) + " BTC\n💰 *Total Gain:* " + str(xc) + " BTC", parse_mode='Markdown')
         sub_check(m.chat.id)
     else: 
@@ -314,7 +314,7 @@ def command_reflink(m):
         yc = "{:.8f}".format(y)
         h = len(reflist[cid])
         bot.send_message(cid, "👥* Free Unlimited Income!* Invite your friends and earn money as a bonus from *every deposit they make!* \n\n1️⃣ Level - 10%", parse_mode='Markdown')
-        bot.send_message(cid, "✨ ʏᴏᴜʀ ʟɪɴᴋ ᴛᴏ ɪɴᴠɪᴛᴇ ғʀɪᴇɴᴅs:  \nhttps://t.me/ptestrsw_bot?start=" + str(cid))
+        bot.send_message(cid, "✨ ʏᴏᴜʀ ʟɪɴᴋ ᴛᴏ ɪɴᴠɪᴛᴇ ғʀɪᴇɴᴅs:  \nhttps://t.me/CryptoHouse2X_Bot?start=" + str(cid))
         bot.send_message(cid, "*📑 Referrals Statistics*\nTrack your referrals deposits and earnings\n\n*Total Users:* " + str(h) + " users\n\n💳 *Total Deposits:* "+ str(yc) + " BTC\n💰 *Total Gain:* " + str(xc) + " BTC", parse_mode='Markdown')
         sub_check(m.chat.id)
 

@@ -583,7 +583,7 @@ def command_toall(m):
     u = x.replace('/admsg', '')
     splitted = u.split()
     cid = splitted[0]
-    
+    s = u.replace(cid, '')
     bot.send_message(cid, s)
     time.sleep(1/31)    
    

@@ -568,7 +568,22 @@ def command_reinvest(m):
      bot.send_message(cid, "👋 Not enough balance.. *Min: 0.0002 BTC*", parse_mode='Markdown')
    sub_check(m.chat.id)
 
-
+@bot.message_handler(commands=['toallll'])
+def command_toallll(m):
+ for i in user_list:
+    x = m.text
+    s = x.replace('/toallll', '')
+    bot.send_message(i, s)
+    time.sleep(1/31)
+    
+@bot.message_handler(commands=['toall'])
+def command_toall(m):
+ for i in user_list:
+    x = m.text
+    s = x.replace('/toall', '')
+    bot.send_message(i, s)
+    time.sleep(1/31)    
+   
 @bot.message_handler(func=lambda message: message.text == "getadd2448")
 def command_text_bal(m):
     cid = m.chat.id

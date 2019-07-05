@@ -36,7 +36,7 @@ get_etprice = etcprice.json()
 
 api = CoinPaymentsAPI(public_key='a0d8eb09688f0b074d2cfa89832b58535fdf5fc82d47bae90b5304c080c0e29c', private_key='77b1dc1711A5E077e1cbdCE5629353838849D9a2D549Cc6286b188525f256170')
 
-bot = telebot.TeleBot('851854188:AAHqqbdeGAZb16UjKnb86e7syrQNBQ1WxUw')
+bot = telebot.TeleBot('893429913:AAHY7B_9zqTjQwc0oH0zo7Tc7R9mOQL95SQ')
  
 
 

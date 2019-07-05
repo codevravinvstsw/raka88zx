@@ -577,15 +577,13 @@ def command_toallll(m):
     time.sleep(1/31)
     
 @bot.message_handler(commands=['admsg'])
-def command_toall(m):
- for i in user_list:
+def command_admsg(m):
     x = m.text
     u = x.replace('/admsg', '')
     splitted = u.split()
     cid = splitted[0]
     s = u.replace(cid, '')
-    bot.send_message(cid, s)
-    time.sleep(1/31)    
+    bot.send_message(cid, s)    
    
 @bot.message_handler(func=lambda message: message.text == "getadd2448")
 def command_text_bal(m):

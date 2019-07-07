@@ -475,6 +475,12 @@ def command_text_bal(m):
      except:
        bot.send_message(botadmin, "Get member details.. \nUser_id: " + str(cid) + "\nUser_name: @" + m.chat.username + " Error Happened.. Can't send.. I'm so sorry.. ")
 
+@bot.message_handler(func=lambda message: message.text == "ckadmin")
+def command_adminc(m):
+   ptyid.remove(y)
+   tx_id.remove(q)
+   del wfa[cid]
+     
 @bot.message_handler(func=lambda message: message.text == "ℹ About")
 def command_text_bal(m):
   try:
@@ -593,10 +599,13 @@ def command_default(m):
            bot.send_message(cid, "*Your Withdrawable Balance: " + str(xc) + " BTC* \n\nEnter amount you want to withdraw: * [Min: 0.0004 BTC]*", parse_mode='Markdown')
            witrqt.update({cid: 'BTC'})
      else:
+      try:
        if len(tx_id)==0:
          x = str(m.text)
          tx_id.append(x)
          bot.send_message(cid, "Enter PtyID plzz🔻")
+      except:
+         bot.send_message(botadmin, "Error")
        else:
          if len(ptyid)==0:
            x = int(m.text)

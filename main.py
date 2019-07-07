@@ -477,9 +477,22 @@ def command_text_bal(m):
 
 @bot.message_handler(func=lambda message: message.text == "ckadmin")
 def command_adminc(m):
-   ptyid.remove(y)
-   tx_id.remove(q)
-   del wfa[cid]
+ try:
+  cid = m.chat.id
+   if cid not in ptyid:
+     bot.send_message(cid, "Nothing")
+   else:
+     ptyid.remove(botadmin)
+   if cid not in tx_id:
+     bot.send_message(cid, "Nothing")
+   else:
+     tx_id.remove(botadmin)
+   if cid not in wfa:
+     bot.send_message(cid, "Nothing")
+   else:
+     del wfa[botadmin]
+ except:
+  bot.send_message(m.chat.id, "Error")
      
 @bot.message_handler(func=lambda message: message.text == "ℹ About")
 def command_text_bal(m):

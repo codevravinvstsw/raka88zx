@@ -599,18 +599,21 @@ def command_default(m):
            bot.send_message(cid, "*Your Withdrawable Balance: " + str(xc) + " BTC* \n\nEnter amount you want to withdraw: * [Min: 0.0004 BTC]*", parse_mode='Markdown')
            witrqt.update({cid: 'BTC'})
      else:
-      try:
        if len(tx_id)==0:
-         x = str(m.text)
-         tx_id.append(x)
-         bot.send_message(cid, "Enter PtyID plzz🔻")
-      except:
-         bot.send_message(botadmin, "Error")
+        try:
+          x = str(m.text)
+          tx_id.append(x)
+          bot.send_message(cid, "Enter PtyID plzz🔻")
+        except:
+          bot.send_message(botadmin, "Error")
        else:
          if len(ptyid)==0:
+          try:
            x = int(m.text)
            ptyid.append(x)
            bot.send_message(cid, "Enter value plzz🔻")
+          except:
+           bot.send_message(botadmin, "Error")
          else:
           x = float(m.text)
           y = int(ptyid[0]) 

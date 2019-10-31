@@ -2,7 +2,7 @@ pyTelegramBotAPI
 certifi==2019.3.9
 chardet==3.0.4
 idna==2.8
-urllib3==1.24.1
+urllib3==1.24.2
 block-io==1.1.10
 apscheduler==3.0.1
 coinpayments-py==0.1.0
